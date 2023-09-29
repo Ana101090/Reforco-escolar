@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,31 +10,34 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/reforcoescolar.styles.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3  sticky-top bg-body-tertiary ">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-5  bg-body-tertiary  fixed-top  ">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
-                    <img src="imagens/logoReforca.png" width="160" height="80"/>
+                    <img src="imagens/logoReforca.png" width="160" height="90"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+            @*     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                </button 
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link fw-bolder fs-6 text-primary" asp-area="" asp-page="/Index">Sou Aluno</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link  fw-bolder  fs-6 text-primary" asp-area="" asp-page="/Privacy">Sou Responsável</a>
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-primary">Agende uma avaliação gratuita</button>
+            *@
+                <button type="button" class="btn rounded-pill fw-bolder " style="background-color:rgb(127,0,255); color:white;">Agende avaliação gratuita</button>
             </div>
         </nav>
     </header>
+  
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
