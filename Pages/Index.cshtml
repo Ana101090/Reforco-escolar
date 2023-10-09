@@ -25,7 +25,7 @@
 
 *Body
 - 'banner' falando um pouco sobre os benefícios do reforço escolar - ok
-- título sobre disciplinas -ok 
+- título sobre disciplinas -ok
 - cards com as disciplinas - ok
 - título sobre benefícios
 - icones com benefícios das aulas (exemplo aulas online, dinâmicas, personalizadas, acompanhamento progresso na plataforma)
@@ -38,45 +38,74 @@
 - área entre em contato.
 
 * Obs: Cuidar para o código ficar limpo e organizado.
-TODO: Pesquisar como costumizar fonte e cores das fontes 
+TODO: Pesquisar como costumizar fonte e cores das fontes
 *@
-<img src="~/imagens/banner2.png" alt="..." class="img-fluid" style="padding-bottom:50px; padding-top:100px">
+<style>
+    #texto {
+        color: rgb(76,0,125);
+    }
 
-<h2 class="text-center">Disciplinas</h2>
+    #banner {
+        padding-bottom: 30px;
+        padding-top: 120px;
+    }
 
+    #container {
+        position: relative;
+        height: 0px;
+        width: 100%;
+        padding-bottom: 46.25%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #video {
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        width: auto;
+        height: 350px;
+    }
+</style>
+
+
+<div id="banner">
+<h2 class="text-center" id="texto">Disciplinas</h2>
+<h3 class="text-center" id="texto"> Saiba mais sobre como abordaremos cada disciplina </h3>
+</div>
 <div class="row">
     <div class="col-sm-3 shadow-sm p-3 mb-3">
-            <div class="card" style="width: 16rem;">
-                <img src="~/imagens/logoReforca.png" class="card-img-top" alt="..." width="160" height="150">
-                <div class="card-body">
-                    <p class="card-text">História</p>
-                </div>
+        <div class="card" style="width: 16rem;">
+            <img src="~/imagens/por.png" class="card-img-top " alt="..." width="160" height="150">
+            <div class="card-body">
+                <h5 class="card-text text-center" id="texto">Língua Portuguesa</h5>
             </div>
+        </div>
     </div>
     <div class="col-sm-3 shadow-sm p-3 mb-3">
-            <div class="card" style="width: 16rem;">
-                <img src="~/imagens/logoReforca.png" class="card-img-top" alt="..." width="160" height="150">
-                <div class="card-body">
-                <p class="card-text text-center">Ciências</p>
-                </div>
+        <div class="card" style="width: 16rem;">
+            <img src="~/imagens/ciencias.png" class="card-img-top" alt="..." width="160" height="150">
+            <div class="card-body">
+                <h5 class="card-text text-center" id="texto">Ciências</h5>
             </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3 shadow-sm p-3 mb-3">
+        <div class="card" style="width: 16rem;">
+            <img src="~/imagens/mat.png" class="card-img-top " alt="..." width="160" height="150">
+            <div class="card-body">
+                <h5 class="card-text text-center" id="texto">Matemática</h5>
+            </div>
+        </div>
     </div>
     <div class="col-sm-3 shadow-sm p-3 mb-3">
-            <div class="card" style="width: 16rem;">
-                <img src="~/imagens/logoReforca.png" class="card-img-top" alt="..." width="160" height="150">
-                <div class="card-body">
-                <p class="card-text text-center">Língua Portuguesa</p>
-                </div>
+        <div class="card" style="width: 16rem;">
+            <img src="~/imagens/historia.png" class="card-img-top" alt="..." width="160" height="150">
+            <div class="card-body">
+                <h5 class="card-text text-center" id="texto">História</h5>
             </div>
-    </div>
-        
-    <div class="col-sm-3 shadow-sm p-3 mb-3">
-            <div class="card" style="width: 16rem;">
-                <img src="~/imagens/logoReforca.png" class="card-img-top" alt="..." width="160" height="150">
-                <div class="card-body">
-                <p class="card-text text-center">Matemática</p>
-                </div>
-            </div>
+        </div>
     </div>
 </div>
 
