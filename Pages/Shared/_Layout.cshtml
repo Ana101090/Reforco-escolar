@@ -24,6 +24,7 @@
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <img src="imagens/logoReforca.png" width="160" height="90" />
                 </a>
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,7 +40,19 @@
                 </ul>
                 </div> *@
 
+
                 <button type="button" class="btn rounded-pill fw-bolder " style="background-color:rgb(127,0,255); color:white;">Agende avaliação gratuita</button>
+                <div id="texto" class="ui compact menu">
+                    <div id="texto" class="ui simple dropdown item">
+                        Entrar
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item"> Sou Responsável</div>
+                            <div class="item"> Sou Aluno</div>
+                            <div class="item"> Sou Professor</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -60,7 +73,10 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/semantic-ui/semantic.js"></script>
     <script src="~/lib/semantic-ui/semantic.min.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $(".dropdown").dropdown({ fullTextSearch: "exact", allowAdditions: true });
 
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
